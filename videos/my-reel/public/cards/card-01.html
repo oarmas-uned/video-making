@@ -1,0 +1,107 @@
+<div class="card" data-card-id="card-01">
+  <style>
+    .card[data-card-id="card-01"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-01"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-01"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-01"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-01"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-01"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-01"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-01"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-01"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-01"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-01-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-01-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-01-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-01-kicker">11 PM</span>
+      <h1 class="title" id="card-01-title">THREE DAYS AGO.</h1>
+      <p class="detail" id="card-01-detail"></p>
+    </div>
+  </div>
+</div>

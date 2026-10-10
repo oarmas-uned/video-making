@@ -1,0 +1,2155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("fonts/Inter-400-latin.woff2") format("woff2");
+        font-weight: 400;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url("fonts/Inter-700-latin.woff2") format("woff2");
+        font-weight: 700;
+        font-display: block;
+      }
+      :root {
+        --bg: #0a0c12;
+        --text: #ffffff;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0; padding: 0; width: 100%; height: 100%;
+        overflow: hidden; background: #0a0c12;
+        font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+      }
+      #stage {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+      }
+      .video-wrapper {
+        position: absolute;
+        left: 0; top: 1076px; width: 1080px; height: 844px;
+        overflow: hidden; border-radius: 0; box-shadow: none;
+      }
+      .video-wrapper video {
+        width: 100%; height: 100%; object-fit: cover;
+      }
+      .card-host {
+        position: absolute; pointer-events: none; overflow: hidden;
+      }
+      .card-host .card {
+        position: relative; width: 100%; height: 100%; overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="stage"
+      data-composition-id="talking-head-recut"
+      data-start="0"
+      data-duration="34.379"
+      data-fps="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div class="video-wrapper" id="video-wrap">
+        <video
+          id="bg-video"
+          src="input-video.mp4"
+          playsinline
+          data-has-audio="true"
+          data-start="0"
+          data-duration="34.379"
+          data-track-index="1"
+        ></video>
+      </div>
+
+
+      <div
+        class="card-host clip"
+        data-card-id="card-01"
+        data-start="0.0000"
+        data-duration="1.0000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-01">
+  <style>
+    .card[data-card-id="card-01"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-01"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-01"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-01"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-01"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-01"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-01"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-01"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-01"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-01"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-01-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-01-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-01-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-01-kicker">11 PM</span>
+      <h1 class="title" id="card-01-title">THREE DAYS AGO.</h1>
+      <p class="detail" id="card-01-detail"></p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-02"
+        data-start="1.0000"
+        data-duration="2.7000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-02">
+  <style>
+    .card[data-card-id="card-02"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-02"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-02"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-02"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-02"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-02"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-02"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-02"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-02"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-02"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-02-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-02-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-02-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-02-kicker">THE SHIFT</span>
+      <h1 class="title" id="card-02-title">NO MORE<br/>ANSWERS.</h1>
+      <p class="detail" id="card-02-detail">ChatGPT stopped just answering questions.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-03"
+        data-start="3.7000"
+        data-duration="1.7000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-03">
+  <style>
+    .card[data-card-id="card-03"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-03"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-03"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-03"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-03"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-03"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-03"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-03"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-03"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-03"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-03-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-03-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-03-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-03-kicker">NEW ERA</span>
+      <h1 class="title" id="card-03-title">BUILDING<br/>THINGS.</h1>
+      <p class="detail" id="card-03-detail">It started building things.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-04"
+        data-start="5.4000"
+        data-duration="2.2000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-04">
+  <style>
+    .card[data-card-id="card-04"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-04"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-04"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-04"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-04"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-04"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-04"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-04"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-04"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-04"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-04-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-04-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-04-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-04-kicker">MAGIC</span>
+      <h1 class="title" id="card-04-title">APP<br/>APPEARS.</h1>
+      <p class="detail" id="card-04-detail">Ask for an app, and it appears.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-05"
+        data-start="7.6000"
+        data-duration="1.6000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-05">
+  <style>
+    .card[data-card-id="card-05"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-05"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-05"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-05"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-05"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-05"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-05"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-05"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-05"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-05"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-05-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-05-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-05-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-05-kicker">EXAMPLE</span>
+      <h1 class="title" id="card-05-title">BUDGET<br/>TRACKER.</h1>
+      <p class="detail" id="card-05-detail">Ask for a budget tracker.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-06"
+        data-start="9.2000"
+        data-duration="3.8000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-06">
+  <style>
+    .card[data-card-id="card-06"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-06"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-06"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-06"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-06"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-06"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-06"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-06"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-06"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-06"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-06-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-06-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-06-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-06-kicker">ON DEMAND</span>
+      <h1 class="title" id="card-06-title">LIVE<br/>TOOLING.</h1>
+      <p class="detail" id="card-06-detail">It won't explain how to build one. It builds the tool <span class='pink'>live</span>.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-07"
+        data-start="13.0000"
+        data-duration="1.7000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-07">
+  <style>
+    .card[data-card-id="card-07"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-07"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-07"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-07"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-07"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-07"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-07"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-07"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-07"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-07"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-07-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-07-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-07-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-07-kicker">REAL TIME</span>
+      <h1 class="title" id="card-07-title">RIGHT IN<br/>FRONT OF YOU.</h1>
+      <p class="detail" id="card-07-detail"></p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-08"
+        data-start="14.7000"
+        data-duration="2.1000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-08">
+  <style>
+    .card[data-card-id="card-08"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-08"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-08"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-08"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-08"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-08"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-08"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-08"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-08"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-08"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-08-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-08-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-08-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-08-kicker">OPENAI</span>
+      <h1 class="title" id="card-08-title">INTELLIGENT<br/>UI.</h1>
+      <p class="detail" id="card-08-detail">OpenAI calls it Intelligent UI.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-09"
+        data-start="16.8000"
+        data-duration="2.2000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-09">
+  <style>
+    .card[data-card-id="card-09"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-09"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-09"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-09"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-09"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-09"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-09"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-09"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-09"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-09"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-09-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-09-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-09-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-09-kicker">RELEASE</span>
+      <h1 class="title" id="card-09-title">OCTOBER<br/>7TH.</h1>
+      <p class="detail" id="card-09-detail">It arrived with GPT-4v on October 7th.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-10"
+        data-start="19.0000"
+        data-duration="2.8000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-10">
+  <style>
+    .card[data-card-id="card-10"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-10"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-10"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-10"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-10"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-10"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-10"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-10"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-10"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-10"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-10-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-10-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-10-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-10-kicker">SCALE</span>
+      <h1 class="title" id="card-10-title">1 BILLION<br/>USERS.</h1>
+      <p class="detail" id="card-10-detail">Over 1 billion people use chat GPT every week.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-11"
+        data-start="21.8000"
+        data-duration="3.1000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-11">
+  <style>
+    .card[data-card-id="card-11"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-11"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-11"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-11"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-11"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-11"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-11"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-11"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-11"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-11"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-11-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-11-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-11-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-11-kicker">APP STORES</span>
+      <h1 class="title" id="card-11-title">NO MORE<br/>APP STORE.</h1>
+      <p class="detail" id="card-11-detail">That's a billion people who may never open an app store again.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-12"
+        data-start="24.9000"
+        data-duration="2.6000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-12">
+  <style>
+    .card[data-card-id="card-12"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-12"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-12"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-12"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-12"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-12"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-12"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-12"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-12"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-12"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-12-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-12-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-12-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-12-kicker">QUESTION</span>
+      <h1 class="title" id="card-12-title">APPS YOU<br/>PAY FOR?</h1>
+      <p class="detail" id="card-12-detail">So what happens to every app you pay for?</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-13"
+        data-start="27.5000"
+        data-duration="2.3000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-13">
+  <style>
+    .card[data-card-id="card-13"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-13"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-13"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-13"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-13"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-13"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-13"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-13"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-13"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-13"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-13-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-13-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-13-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-13-kicker">FUTURE</span>
+      <h1 class="title" id="card-13-title">SOFTWARE ON<br/>DEMAND.</h1>
+      <p class="detail" id="card-13-detail">Because when software can be built on demand,</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-14"
+        data-start="29.8000"
+        data-duration="2.0000"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-14">
+  <style>
+    .card[data-card-id="card-14"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-14"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-14"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-14"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-14"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-14"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-14"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-14"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-14"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-14"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-14-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-14-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-14-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-14-kicker">REALITY</span>
+      <h1 class="title" id="card-14-title">THE PROMPT IS<br/>THE PRODUCT.</h1>
+      <p class="detail" id="card-14-detail">the real product becomes the prompt.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <div
+        class="card-host clip"
+        data-card-id="card-15"
+        data-start="31.8000"
+        data-duration="2.5790"
+        data-track-index="2"
+        style="left:0;top:0;width:1080px;height:1076px;visibility:hidden;opacity:0;"
+      >
+<div class="card" data-card-id="card-15">
+  <style>
+    .card[data-card-id="card-15"] .root {
+      --bg: #0a0c12;
+      --ink: #ffffff;
+      --muted: #aaaaaa;
+      --accent: #d4ff00;
+      --accent2: #ff2e88;
+      --accent3: #ffffff;
+      --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+    }
+    .card[data-card-id="card-15"] .slab-1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 200px;
+      background: var(--accent);
+    }
+    .card[data-card-id="card-15"] .slab-2 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 360px;
+      height: 360px;
+      background: var(--accent2);
+    }
+    .card[data-card-id="card-15"] .stripe {
+      position: absolute;
+      left: -40px;
+      top: 500px;
+      height: 4px;
+      width: 800px;
+      background: var(--accent3);
+      transform: rotate(-6deg);
+    }
+    .card[data-card-id="card-15"] .content {
+      position: absolute;
+      left: 36px;
+      top: 60px;
+      right: 36px;
+      bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card[data-card-id="card-15"] .kicker {
+      align-self: flex-start;
+      padding: 10px 18px;
+      background: var(--ink);
+      color: var(--bg);
+      font: 800 28px/1 var(--font-mono);
+      letter-spacing: 0.24em;
+    }
+    .card[data-card-id="card-15"] .title {
+      margin: 0;
+      font: 900 110px/0.95 var(--font-sans);
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+    .card[data-card-id="card-15"] .stroke {
+      -webkit-text-stroke: 4px var(--accent);
+      color: transparent;
+    }
+    .card[data-card-id="card-15"] .detail {
+      margin: 0;
+      font: 600 42px/1.4 var(--font-sans);
+      color: var(--muted);
+      max-width: 90%;
+    }
+    .card[data-card-id="card-15"] .detail .pink {
+      color: var(--accent2);
+    }
+  </style>
+
+  <div class="root">
+    <span
+      class="slab-1"
+      id="card-15-slab1"
+    ></span>
+    <span
+      class="slab-2"
+      id="card-15-slab2"
+    ></span>
+    <span
+      class="stripe"
+      id="card-15-stripe"
+    ></span>
+
+    <div class="content">
+      <span class="kicker" id="card-15-kicker">SUBSCRIBE</span>
+      <h1 class="title" id="card-15-title">FOLLOW FOR<br/>MORE.</h1>
+      <p class="detail" id="card-15-detail">Follow for the text stories, nobody explains.</p>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <script src="vendor/gsap.min.js"></script>
+      <script>
+        (function () {
+          const tl = window.gsap.timeline({ paused: true });
+
+          // initial video bounds for inverted stack layout (video on bottom)
+          tl.set("#video-wrap", { left: 0, top: 1076, width: 1080, height: 844 }, 0);
+
+
+          tl.set('.card-host[data-card-id="card-01"]', { visibility: "visible" }, 0.0000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-01"]', { opacity: 1 }, 0.0000);
+          
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 0.0000);
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 0.0000);
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 0.1000);
+          
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 0.1000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 0.1500);
+          tl.fromTo('.card[data-card-id="card-01"] #card-01-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 0.2500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-01"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            0.8500
+          );
+          tl.set('.card-host[data-card-id="card-01"]', { visibility: "hidden" }, 1.0000);
+
+          tl.set('.card-host[data-card-id="card-02"]', { visibility: "visible" }, 1.0000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-02"]', { opacity: 1 }, 1.0000);
+          
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 1.0000);
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 1.0000);
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 1.1000);
+          
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 1.1000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 1.1500);
+          tl.fromTo('.card[data-card-id="card-02"] #card-02-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 1.2500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-02"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            3.5500
+          );
+          tl.set('.card-host[data-card-id="card-02"]', { visibility: "hidden" }, 3.7000);
+
+          tl.set('.card-host[data-card-id="card-03"]', { visibility: "visible" }, 3.7000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-03"]', { opacity: 1 }, 3.7000);
+          
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 3.7000);
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 3.7000);
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 3.8000);
+          
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 3.8000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 3.8500);
+          tl.fromTo('.card[data-card-id="card-03"] #card-03-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 3.9500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-03"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            5.2500
+          );
+          tl.set('.card-host[data-card-id="card-03"]', { visibility: "hidden" }, 5.4000);
+
+          tl.set('.card-host[data-card-id="card-04"]', { visibility: "visible" }, 5.4000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-04"]', { opacity: 1 }, 5.4000);
+          
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 5.4000);
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 5.4000);
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 5.5000);
+          
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 5.5000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 5.5500);
+          tl.fromTo('.card[data-card-id="card-04"] #card-04-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 5.6500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-04"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            7.4500
+          );
+          tl.set('.card-host[data-card-id="card-04"]', { visibility: "hidden" }, 7.6000);
+
+          tl.set('.card-host[data-card-id="card-05"]', { visibility: "visible" }, 7.6000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-05"]', { opacity: 1 }, 7.6000);
+          
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 7.6000);
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 7.6000);
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 7.7000);
+          
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 7.7000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 7.7500);
+          tl.fromTo('.card[data-card-id="card-05"] #card-05-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 7.8500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-05"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            9.0500
+          );
+          tl.set('.card-host[data-card-id="card-05"]', { visibility: "hidden" }, 9.2000);
+
+          tl.set('.card-host[data-card-id="card-06"]', { visibility: "visible" }, 9.2000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-06"]', { opacity: 1 }, 9.2000);
+          
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 9.2000);
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 9.2000);
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 9.3000);
+          
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 9.3000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 9.3500);
+          tl.fromTo('.card[data-card-id="card-06"] #card-06-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 9.4500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-06"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            12.8500
+          );
+          tl.set('.card-host[data-card-id="card-06"]', { visibility: "hidden" }, 13.0000);
+
+          tl.set('.card-host[data-card-id="card-07"]', { visibility: "visible" }, 13.0000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-07"]', { opacity: 1 }, 13.0000);
+          
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 13.0000);
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 13.0000);
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 13.1000);
+          
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 13.1000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 13.1500);
+          tl.fromTo('.card[data-card-id="card-07"] #card-07-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 13.2500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-07"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            14.5500
+          );
+          tl.set('.card-host[data-card-id="card-07"]', { visibility: "hidden" }, 14.7000);
+
+          tl.set('.card-host[data-card-id="card-08"]', { visibility: "visible" }, 14.7000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-08"]', { opacity: 1 }, 14.7000);
+          
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 14.7000);
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 14.7000);
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 14.8000);
+          
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 14.8000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 14.8500);
+          tl.fromTo('.card[data-card-id="card-08"] #card-08-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 14.9500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-08"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            16.6500
+          );
+          tl.set('.card-host[data-card-id="card-08"]', { visibility: "hidden" }, 16.8000);
+
+          tl.set('.card-host[data-card-id="card-09"]', { visibility: "visible" }, 16.8000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-09"]', { opacity: 1 }, 16.8000);
+          
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 16.8000);
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 16.8000);
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 16.9000);
+          
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 16.9000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 16.9500);
+          tl.fromTo('.card[data-card-id="card-09"] #card-09-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 17.0500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-09"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            18.8500
+          );
+          tl.set('.card-host[data-card-id="card-09"]', { visibility: "hidden" }, 19.0000);
+
+          tl.set('.card-host[data-card-id="card-10"]', { visibility: "visible" }, 19.0000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-10"]', { opacity: 1 }, 19.0000);
+          
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 19.0000);
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 19.0000);
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 19.1000);
+          
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 19.1000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 19.1500);
+          tl.fromTo('.card[data-card-id="card-10"] #card-10-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 19.2500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-10"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            21.6500
+          );
+          tl.set('.card-host[data-card-id="card-10"]', { visibility: "hidden" }, 21.8000);
+
+          tl.set('.card-host[data-card-id="card-11"]', { visibility: "visible" }, 21.8000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-11"]', { opacity: 1 }, 21.8000);
+          
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 21.8000);
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 21.8000);
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 21.9000);
+          
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 21.9000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 21.9500);
+          tl.fromTo('.card[data-card-id="card-11"] #card-11-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 22.0500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-11"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            24.7500
+          );
+          tl.set('.card-host[data-card-id="card-11"]', { visibility: "hidden" }, 24.9000);
+
+          tl.set('.card-host[data-card-id="card-12"]', { visibility: "visible" }, 24.9000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-12"]', { opacity: 1 }, 24.9000);
+          
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 24.9000);
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 24.9000);
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 25.0000);
+          
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 25.0000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 25.0500);
+          tl.fromTo('.card[data-card-id="card-12"] #card-12-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 25.1500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-12"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            27.3500
+          );
+          tl.set('.card-host[data-card-id="card-12"]', { visibility: "hidden" }, 27.5000);
+
+          tl.set('.card-host[data-card-id="card-13"]', { visibility: "visible" }, 27.5000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-13"]', { opacity: 1 }, 27.5000);
+          
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 27.5000);
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 27.5000);
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 27.6000);
+          
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 27.6000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 27.6500);
+          tl.fromTo('.card[data-card-id="card-13"] #card-13-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 27.7500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-13"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            29.6500
+          );
+          tl.set('.card-host[data-card-id="card-13"]', { visibility: "hidden" }, 29.8000);
+
+          tl.set('.card-host[data-card-id="card-14"]', { visibility: "visible" }, 29.8000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-14"]', { opacity: 1 }, 29.8000);
+          
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 29.8000);
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 29.8000);
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 29.9000);
+          
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 29.9000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 29.9500);
+          tl.fromTo('.card[data-card-id="card-14"] #card-14-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 30.0500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-14"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            31.6500
+          );
+          tl.set('.card-host[data-card-id="card-14"]', { visibility: "hidden" }, 31.8000);
+
+          tl.set('.card-host[data-card-id="card-15"]', { visibility: "visible" }, 31.8000);
+          // snap opacity instantly for faster cuts
+          tl.set('.card-host[data-card-id="card-15"]', { opacity: 1 }, 31.8000);
+          
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-slab1', { opacity: 0, x: -540 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 31.8000);
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-slab2', { opacity: 0, x: 360 }, { opacity: 1, x: 0, duration: 0.25, ease: 'power2.out' }, 31.8000);
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-stripe', { width: 0 }, { width: 800, duration: 0.3, ease: 'power2.out' }, 31.9000);
+          
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-kicker', { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.25, ease: 'back.out(1.5)' }, 31.9000);
+          // scale pop for title to make it aggressive
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-title', { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, 31.9500);
+          tl.fromTo('.card[data-card-id="card-15"] #card-15-detail', { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 32.0500);
+
+          // fast exit
+          tl.to('.card-host[data-card-id="card-15"]',
+            { opacity: 0, duration: 0.15, ease: "power2.in" },
+            34.2290
+          );
+          tl.set('.card-host[data-card-id="card-15"]', { visibility: "hidden" }, 34.3790);
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["talking-head-recut"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

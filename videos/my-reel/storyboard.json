@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 34.379,
+    "layout": "portrait",
+    "themeId": "noir",
+    "seed": 42
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 34.379,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "card-01",
+      "intent": "Three days ago, ChatGPT stopped just answering questions.",
+      "startSec": 0.0,
+      "endSec": 7.6,
+      "accentIndex": 0,
+      "zone": "lower-third",
+      "contentHints": {
+        "kicker": "THE SHIFT",
+        "title": "BUILDING<br/>THINGS.",
+        "detail": "Three days ago, ChatGPT stopped just answering questions. It started building things."
+      }
+    },
+    {
+      "id": "card-02",
+      "intent": "Ask for an app, and it appears.",
+      "startSec": 7.6,
+      "endSec": 14.7,
+      "accentIndex": 1,
+      "zone": "lower-third",
+      "contentHints": {
+        "kicker": "ON DEMAND",
+        "title": "LIVE<br/>TOOLING.",
+        "detail": "Ask for a budget tracker. It builds the tool <span class='pink'>live</span>, right in front of you."
+      }
+    },
+    {
+      "id": "card-03",
+      "intent": "Intelligent UI",
+      "startSec": 14.7,
+      "endSec": 21.8,
+      "accentIndex": 2,
+      "zone": "lower-third",
+      "contentHints": {
+        "kicker": "INTELLIGENT UI",
+        "title": "1 BILLION<br/>USERS.",
+        "detail": "Arrived with GPT-4v on Oct 7th. Over 1 billion people use it every week."
+      }
+    },
+    {
+      "id": "card-04",
+      "intent": "No more app stores.",
+      "startSec": 21.8,
+      "endSec": 27.6,
+      "accentIndex": 3,
+      "zone": "lower-third",
+      "contentHints": {
+        "kicker": "APP STORES",
+        "title": "NO MORE<br/>APPS?",
+        "detail": "That's a billion people who may <span class='pink'>never open an app store</span> again."
+      }
+    },
+    {
+      "id": "card-05",
+      "intent": "The prompt is the product.",
+      "startSec": 27.6,
+      "endSec": 34.3,
+      "accentIndex": 4,
+      "zone": "lower-third",
+      "contentHints": {
+        "kicker": "FUTURE",
+        "title": "THE<br/>PROMPT.",
+        "detail": "When software can be built on demand, the real product becomes the prompt."
+      }
+    }
+  ]
+}

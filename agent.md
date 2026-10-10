@@ -55,3 +55,9 @@ npx hyperframes render . -c public/index.html --output output_v2_real.mp4
 - Node.js v22+
 - FFmpeg
 - Ubuntu/Linux dependencies for Puppeteer/Headless Chrome (libnss3, libatk, libgbm, etc.)
+
+## Easy Render Script
+To avoid missing the GPU configuration on a new device, simply run:
+```bash
+bash render.sh
+```
